@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.feedback-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback-list {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #162d34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: top; /* Align content to the top */
+}
+
+th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.sort-indicator {
+    color: grey;
+}
+
+th.active-sort .sort-indicator.active {
+    color: black; /* Or any color to indicate active sort */
+}
+
+
+.truncated-feedback {
+    white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+    max-height: 4.5em; /* Approximately 3 lines for most fonts (assuming 1.5em line-height) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em; /* Explicit line height for consistent truncation */
+}
